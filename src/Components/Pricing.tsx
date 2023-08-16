@@ -75,14 +75,22 @@ function Pricing() {
           {subcriptions.map((subcription, index) => (
             <div
               key={index}
-              className="h-124 w-72 border-grey border border-red-400 hover:border-red-600 rounded-3xl"
+              className="lg:h-124 lg:w-72 mx-2 border-grey border border-red-400 hover:border-red-600 rounded-3xl"
             >
               {subcription.title === "Free Plan" ? (
                 <img src={iconFree} alt="free" className="w-40 mt-10 mx-auto" />
               ) : subcription.title === "Standard Plan" ? (
-                <img src={iconStan} alt="free" className="w-40 mt-10 mx-auto" />
+                <img
+                  src={iconStan}
+                  alt="Standard"
+                  className="w-40 mt-10 mx-auto"
+                />
               ) : (
-                <img src={iconPrem} alt="free" className="w-40 mt-10 mx-auto" />
+                <img
+                  src={iconPrem}
+                  alt="Premium"
+                  className="w-40 mt-10 mx-auto"
+                />
               )}
               <h2 className="font-bold mt-8">{subcription.title}</h2>
               <ul className="mt-6 mx-auto px-8 h-80">

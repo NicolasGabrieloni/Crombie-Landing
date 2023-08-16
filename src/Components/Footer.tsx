@@ -4,7 +4,7 @@ import { FiFacebook, FiTwitter, FiInstagram } from "react-icons/fi";
 function Footer() {
   return (
     <>
-      <div className="h-72 p-8 flex">
+      <div className="h-72 p-4 flex">
         <div className="w-1/4">
           <img src={icon} alt="icono" className="w-32 ml-8" />
           <p className="mt-4 ml-8">

@@ -1,7 +1,7 @@
 function Suscribe() {
   return (
     <>
-      <div className="text-center my-40 h-60 flex">
+      <div className="text-center my-40 h-60 md:flex">
         <div className="my-auto ml-32 w-1/2">
           <h2 className="font-bold text-4xl text-left">
             Subscribe Now for <br />

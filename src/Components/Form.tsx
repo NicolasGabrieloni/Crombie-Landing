@@ -56,7 +56,7 @@ function Form() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Email"
-            className="w-7/12 h-8 rounded-xl mt-5 text-black focus:outline-red-600 placeholder:text-center"
+            className="w-10/12 h-8 rounded-xl mt-5 text-black focus:outline-red-600 placeholder:text-center"
           />
           <br />
           <label htmlFor="text" className="font-bold text-2xl">
@@ -68,7 +68,7 @@ function Form() {
             value={coments}
             onChange={(e) => setComents(e.target.value)}
             placeholder="Write here"
-            className="w-7/12 h-28 rounded-xl mt-5 text-black focus:outline-red-600 placeholder:text-center"
+            className="w-10/12 h-28 rounded-xl mt-5 text-black focus:outline-red-600 placeholder:text-center"
           />
           <br />
           <button
