@@ -72,8 +72,11 @@ function Pricing() {
           </p>
         </div>
         <div className="flex justify-around mt-24">
-          {subcriptions.map((subcription) => (
-            <div className="h-124 w-72 border-grey border border-red-400 hover:border-red-600 rounded-3xl">
+          {subcriptions.map((subcription, index) => (
+            <div
+              key={index}
+              className="h-124 w-72 border-grey border border-red-400 hover:border-red-600 rounded-3xl"
+            >
               {subcription.title === "Free Plan" ? (
                 <img src={iconFree} alt="free" className="w-40 mt-10 mx-auto" />
               ) : subcription.title === "Standard Plan" ? (
@@ -83,8 +86,8 @@ function Pricing() {
               )}
               <h2 className="font-bold mt-8">{subcription.title}</h2>
               <ul className="mt-6 mx-auto px-8 h-80">
-                {subcription.benefits.map((benefit) => (
-                  <li className="mt-2 flex">
+                {subcription.benefits.map((benefit, index) => (
+                  <li key={index} className="mt-2 flex">
                     <span className="text-2xl mt-5">
                       <FcApproval />
                     </span>
