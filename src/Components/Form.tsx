@@ -38,16 +38,16 @@ function Form() {
 
   return (
     <>
-      <section className="w-5/12 text-center mx-auto  mb-32">
-        <h2 className="text-4xl font-bold">
+      <section className="lg:w-5/12 w-8/12 text-center mx-auto  mb-32">
+        <h2 className="lg:text-4xl text-xl font-bold">
           Send us your questions or comments!
         </h2>
         <form
           action=""
           onSubmit={handleSubmit}
-          className="mt-10 h-96 border border-red-500 rounded-2xl"
+          className="mt-10 sm:h-96 border border-red-500 rounded-2xl"
         >
-          <label htmlFor="email" className="font-bold text-2xl mt-5">
+          <label htmlFor="email" className="font-bold sm:text-2xl mt-5">
             Email
           </label>
           <br />
@@ -59,7 +59,7 @@ function Form() {
             className="w-10/12 h-8 rounded-xl mt-5 text-black focus:outline-red-600 placeholder:text-center"
           />
           <br />
-          <label htmlFor="text" className="font-bold text-2xl">
+          <label htmlFor="text" className="font-bold sm:text-2xl">
             Comments
           </label>
           <br />
@@ -73,7 +73,8 @@ function Form() {
           <br />
           <button
             type="submit"
-            className="font-bold text-xl border border-red-600 text-red-500 h-10 w-7/12 mt-16 rounded-xl hover:bg-red-600 hover:text-white"
+            className="font-bold sm:text-xl border border-red-600 text-red-500 h-10 w-7/12 sm:mt-16 mt-10 
+            rounded-xl hover:bg-red-600 hover:text-white mb-4"
           >
             Submit
           </button>

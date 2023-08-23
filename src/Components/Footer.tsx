@@ -6,29 +6,29 @@ function Footer() {
     <>
       <div className="h-72 p-4 flex">
         <div className="w-1/4">
-          <img src={icon} alt="icono" className="w-32 ml-8" />
-          <p className="mt-4 ml-8">
+          <img src={icon} alt="icono" className="w-32 lg:ml-8" />
+          <p className="mt-4 lg:ml-8 lg:text-base text-xs">
             <b>LaslesVPN</b> is a private virtual network that has unique
             features and has high security.
           </p>
-          <div className="flex justify-around  mt-8">
+          <div className="flex justify-around mt-8">
             <span className="hover:scale-125 transition duration-300 cursor-pointer">
-              <FiFacebook className="text-red-500 text-2xl" />
+              <FiFacebook className="text-red-500 lg:text-2xl text-xl" />
             </span>
             <span className="hover:scale-125 transition duration-300 cursor-pointer">
-              <FiTwitter className="text-red-500 text-2xl" />
+              <FiTwitter className="text-red-500 lg:text-2xl text-xl" />
             </span>
             <span className="hover:scale-125 transition duration-300 cursor-pointer">
-              <FiInstagram className="text-red-500 text-2xl" />
+              <FiInstagram className="text-red-500 lg:text-2xl text-xl" />
             </span>
           </div>
-          <p className="mt-10 text-grey-500 text-center">
+          <p className="lg:mt-10 mt-6 text-grey-500 text-center lg:text-base text-xs">
             ©2020Lasles<b>VPN</b>
           </p>
         </div>
 
         <div className="w-1/4">
-          <div className="text-left pl-24">
+          <div className="text-left pl-8 lg:pl-24 lg:text-base text-xs">
             <h3>
               <b>Product</b>
             </h3>
@@ -44,7 +44,7 @@ function Footer() {
         </div>
 
         <div className="w-1/4">
-          <div className="text-left pl-24">
+          <div className="text-left pl-8 lg:pl-24 lg:text-base text-xs">
             <h3>
               <b>Engage</b>
             </h3>
@@ -64,7 +64,7 @@ function Footer() {
         </div>
 
         <div className="w-1/4">
-          <div className="text-left pl-24">
+          <div className="text-left pl-8 lg:pl-24 lg:text-base text-xs">
             <h3>
               <b>Earn Money</b>
             </h3>

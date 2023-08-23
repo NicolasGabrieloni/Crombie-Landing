@@ -9,6 +9,7 @@ export default {
       height: {
         128: "900px",
         124: "750px",
+        110: "550px",
       },
       colors: {
         "grey-500": "rgb(111, 112, 115)",

@@ -47,10 +47,10 @@ const Carrusel = () => {
   return (
     <>
       <div className="text-center my-40 ">
-        <h2 className="font-bold text-3xl">
+        <h2 className="font-bold lg:text-3xl text-xl">
           Trusted By Thousands of <br /> Happy Customer
         </h2>
-        <p className="mt-10">
+        <p className="lg:mt-10 lg:text-xl text-sm p-5">
           These are the stories of our customers who have joined us with great
           <br />
           pleasure when using this crazy frature.
@@ -58,13 +58,13 @@ const Carrusel = () => {
         <Carousel>
           {testimonials.map((testimonial) => (
             <div key={testimonial.fullName} style={contentStyle}>
-              <div className="border border-white rounded-xl w-96 h-60 p-5 inline-block text-white mt-28 mb-24">
+              <div className="border border-white rounded-xl lg:w-96 lg:h-60 w-80 p-5 inline-block text-white mt-28 mb-24">
                 <div className="flex justify-between mt-2">
                   <div className="flex">
                     <img
                       src={testimonial.avatar}
                       alt={testimonial.fullName}
-                      className="w-12 h-14 rounded-full ml-7"
+                      className="lg:w-12 lg:h-14 w-10 h-10 rounded-full ml-7"
                     />
                     <div>
                       <h2 className="h-5 font-bold text-sm mt-2 ml-2">
@@ -72,9 +72,9 @@ const Carrusel = () => {
                       </h2>
                     </div>
                   </div>
-                  <p className="text-lg">4.5 ★</p>
+                  <p className="lg:text-lg">4.5 ★</p>
                 </div>
-                <p className="mt-6 text-left ml-10">
+                <p className="mt-6 text-left ml-10 lg:text-xl text-xs">
                   {testimonial.testimonial}
                 </p>
               </div>

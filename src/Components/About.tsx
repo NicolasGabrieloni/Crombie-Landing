@@ -3,9 +3,9 @@ import img1 from "../img/img1.png";
 function About() {
   return (
     <>
-      <section className="section w-10/12 h-96 mt-24 mx-auto lg:flex md:mb-96">
+      <section className="section w-10/12 h-110 mt-40 mx-auto lg:flex md:mb-44">
         <div className="lg:w-1/2 text-center">
-          <h1 className="font-semibold lg:text-4xl md:text-3xl lg:text-left lg:ml-8">
+          <h1 className="font-semibold lg:text-4xl lg:text-left lg:ml-8 text-3xl">
             Want anything to be <br />
             easy with <span className="font-bold">LaslesVPN.</span>
           </h1>
@@ -14,12 +14,19 @@ function About() {
             <span className="font-semibold "> LaslesVPN</span> <br />
             discover interesting features from us.
           </p>
-          <button className="w-56 h-12 lg:mt-24 md:mt-10 rounded-xl bg-red-500 font-semibold shadow-3xl hover:scale-105 duration-100">
+          <button
+            className="w-36 h-10 mt-8 lg:w-56 lg:h-12 lg:mt-24 md:mt-10 rounded-xl
+           bg-red-500 font-semibold shadow-3xl hover:scale-105 duration-100"
+          >
             Get Started
           </button>
         </div>
         <div className="lg:w-1/2">
-          <img src={img1} alt="img1" className="lg:w-10/12 md:w-8/12 md:mt-10 mx-auto" />
+          <img
+            src={img1}
+            alt="img1"
+            className="lg:w-10/12 md:w-8/12 md:mt-10 mx-auto my-10"
+          />
         </div>
       </section>
     </>

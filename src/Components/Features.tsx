@@ -5,36 +5,54 @@ import img2 from "../img/img2.png";
 function Features() {
   return (
     <>
-      <section className="section w-10/12 h-auto lg:my-36 mx-auto">
+      <section className="section w-10/12 h-auto mx-auto md:my-20 my-36">
         <div className="flex justify-evenly">
-          <div className="flex cursor-pointer hover:scale-110 transition duration-300">
+          <div className="flex cursor-pointer hover:scale-110 transition duration-300 mx-2">
             <span
               className="mr-2 mt-2 text-red-500 bg-yellow-50 rounded-full 
-            lg:w-12 lg:h-12 lg:text-l lg:px-4 lg:py-4 md:w-10 md:h-10 md:text-l md:px-3 md:py-3"
+            lg:w-12 lg:h-12 lg:text-l lg:p-4 
+            md:w-10 md:h-10 md:text-l md:p-3
+            w-8 h-8 p-2 text-sm"
             >
               <FaUserAlt />
             </span>
             <div>
-              <p className="font-extrabold lg:text-2xl md:text-xl">90+</p>
-              <p>Users</p>
+              <p className="font-extrabold lg:text-2xl md:text-xl text-sm">
+                90+
+              </p>
+              <p className="text-sm">Users</p>
             </div>
           </div>
-          <div className="flex cursor-pointer hover:scale-110 transition duration-300">
-            <span className="mr-2 mt-2 text-red-500 bg-yellow-50 rounded-full lg:w-12 lg:h-12 lg:text-l lg:px-4 lg:py-4 md:w-10 md:h-10 md:text-l md:px-3 md:py-3">
+          <div className="flex cursor-pointer hover:scale-110 transition duration-300 mx-2">
+            <span
+              className="mr-2 mt-2 text-red-500 bg-yellow-50 rounded-full 
+            lg:w-12 lg:h-12 lg:text-l lg:p-4 
+            md:w-10 md:h-10 md:text-l md:p-3
+            w-8 h-8 p-2 text-sm"
+            >
               <FaLocationArrow />
             </span>
             <div>
-              <p className="font-extrabold lg:text-2xl md:text-xl">30+</p>
-              <p>Locations</p>
+              <p className="font-extrabold lg:text-2xl md:text-xl text-sm">
+                30+
+              </p>
+              <p className="text-sm">Locations</p>
             </div>
           </div>
-          <div className="flex cursor-pointer hover:scale-110 transition duration-300">
-            <span className="mr-2 mt-2 text-red-500 bg-yellow-50 rounded-full lg:w-12 lg:h-12 lg:text-l lg:px-4 lg:py-4 md:w-10 md:h-10 md:text-l md:px-3 md:py-3">
+          <div className="flex cursor-pointer hover:scale-110 transition duration-300 mx-2">
+            <span
+              className="mr-2 mt-2 text-red-500 bg-yellow-50 rounded-full 
+            lg:w-12 lg:h-12 lg:text-l lg:p-4 
+            md:w-10 md:h-10 md:text-l md:p-3
+            w-8 h-8 p-2 text-sm"
+            >
               <FaServer />
             </span>
             <div>
-              <p className="font-extrabold lg:text-2xl md:text-xl">50+</p>
-              <p>Servers</p>
+              <p className="font-extrabold lg:text-2xl md:text-xl text-sm">
+                50+
+              </p>
+              <p className="text-sm">Servers</p>
             </div>
           </div>
         </div>
@@ -47,37 +65,43 @@ function Features() {
             />
           </div>
           <div className="lg:w-1/2 sm:w-80 sm:mx-auto">
-            <h2 className="font-semibold text-3xl text-left lg:ml-12 mt-10">
+            <h2 className="font-semibold text-3xl lg:text-left text-center lg:ml-12 mt-10">
               We provide many <br /> features you can use
             </h2>
-            <p className="mt-10 text-left lg:ml-12">
+            <p className="mt-10 lg:text-left text-center lg:ml-12">
               You can explore the features what we provide with fun and
               <br /> have their own functions each feature.
             </p>
-            <ul className="mt-6">
+            <ul className="mt-6 ml-10">
               <li className="mt-2 lg:ml-16 sm:ml-5 flex">
                 <span className="text-2xl">
                   <FcApproval />
                 </span>
-                <p className="lg:ml-10 sm:ml-5">Powerfull online protection.</p>
+                <p className="lg:ml-10 sm:ml-5 ml-2">
+                  Powerfull online protection.
+                </p>
               </li>
               <li className="mt-2 lg:ml-16 sm:ml-5 flex">
                 <span className="text-2xl">
                   <FcApproval />
                 </span>
-                <p className="lg:ml-10 sm:ml-5">Internet without borders.</p>
+                <p className="lg:ml-10 sm:ml-5 ml-2">
+                  Internet without borders.
+                </p>
               </li>
               <li className="mt-2 lg:ml-16 sm:ml-5 flex">
                 <span className="text-2xl">
                   <FcApproval />
                 </span>
-                <p className="lg:ml-10 sm:ml-5">Supercharged VPN.</p>
+                <p className="lg:ml-10 sm:ml-5 ml-2">Supercharged VPN.</p>
               </li>
               <li className="mt-2 lg:ml-16 sm:ml-5 flex">
                 <span className="text-2xl">
                   <FcApproval />
                 </span>
-                <p className="lg:ml-10 sm:ml-5">No specific time limits.</p>
+                <p className="lg:ml-10 sm:ml-5 ml-2">
+                  No specific time limits.
+                </p>
               </li>
             </ul>
           </div>
