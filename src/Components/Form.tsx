@@ -1,80 +1,94 @@
-import React, { useState } from "react";
+import { useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+import * as yup from "yup";
 import { BASE_URL } from "../App";
+import Swal from "sweetalert2";
+import withReactContent from "sweetalert2-react-content";
+
+const MySwal = withReactContent(Swal);
 
 type FormData = {
+  name: string;
   email: string;
-  coments: string;
+  comment: string;
 };
 
+const schema = yup
+  .object({
+    name: yup.string().required(),
+    email: yup.string().email().required(),
+    comment: yup.string().required(),
+  })
+  .required();
+
 function Form() {
-  const [email, setEmail] = useState("");
-  const [coments, setComents] = useState("");
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-
-    const formData: FormData = {
-      email,
-      coments,
-    };
-
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+    reset,
+  } = useForm<FormData>({
+    resolver: yupResolver(schema),
+  });
+  const onSubmit = (data: FormData) => {
     fetch(`${BASE_URL}/api/send-email`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(formData),
-    })
-      .then((response) => response.json())
-      .then((result) => {
-        console.log(result);
-        setEmail("");
-        setComents("");
-      })
-      .catch((error) => {
-        console.log(error);
+      body: JSON.stringify(data),
+    }).then(() => {
+      MySwal.fire({
+        heightAuto: false,
+        icon: "success",
+        iconColor: "rgb(112, 224, 0)",
+        width: "240px",
+        background: "black",
+        showConfirmButton: false,
       });
+      console.log(data);
+      reset();
+    });
   };
 
   return (
     <>
-      <section className="lg:w-5/12 w-8/12 text-center mx-auto  mb-32">
-        <h2 className="lg:text-4xl text-xl font-bold">
+      <section id="Help" className="lg:w-5/12 w-8/12 text-center mx-auto  mb-32">
+        <h2 className="lg:text-4xl md:text-2xl text-xl font-bold">
           Send us your questions or comments!
         </h2>
-        <form
-          action=""
-          onSubmit={handleSubmit}
-          className="mt-10 sm:h-96 border border-red-500 rounded-2xl"
-        >
-          <label htmlFor="email" className="font-bold sm:text-2xl mt-5">
-            Email
-          </label>
+        <form onSubmit={handleSubmit(onSubmit)} className="mt-5">
+          <label className="font-bold">Name:</label>
           <br />
           <input
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            placeholder="Email"
-            className="w-10/12 h-8 rounded-xl mt-5 text-black focus:outline-red-600 placeholder:text-center"
+            {...register("name")}
+            placeholder="Your name"
+            className="text-black rounded-md h-7"
           />
-          <br />
-          <label htmlFor="text" className="font-bold sm:text-2xl">
-            Comments
-          </label>
+          <p className="text-sm text-red-500">{errors.name?.message}</p>
+
+          <label className="font-bold">Email:</label>
           <br />
           <input
-            type="text"
-            value={coments}
-            onChange={(e) => setComents(e.target.value)}
-            placeholder="Write here"
-            className="w-10/12 h-28 rounded-xl mt-5 text-black focus:outline-red-600 placeholder:text-center"
+            {...register("email")}
+            placeholder="Your email"
+            className="text-black rounded-md h-7"
           />
+          <p className="text-sm text-red-500">{errors.email?.message}</p>
+
+          <label className="font-bold">Comments:</label>
           <br />
+          <input
+            {...register("comment")}
+            placeholder="Comments or questions"
+            className="text-black rounded-md h-12"
+          />
+          <p className="text-sm text-red-500">{errors.comment?.message}</p>
+
           <button
             type="submit"
-            className="font-bold sm:text-xl border border-red-600 text-red-500 h-10 w-7/12 sm:mt-16 mt-10 
-            rounded-xl hover:bg-red-600 hover:text-white mb-4"
+            className="h-8 mt-5 w-48 text-red-500
+             border border-red-400 rounded-xl font-semibold"
           >
             Submit
           </button>

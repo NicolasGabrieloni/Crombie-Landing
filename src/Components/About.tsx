@@ -3,13 +3,13 @@ import img1 from "../img/img1.png";
 function About() {
   return (
     <>
-      <section className="section w-10/12 h-110 mt-40 mx-auto lg:flex md:mb-44">
+      <section id="About" className="section w-10/12 h-110 mt-40 mx-auto lg:flex lg:mb-10 md:mb-44">
         <div className="lg:w-1/2 text-center">
-          <h1 className="font-semibold lg:text-4xl lg:text-left lg:ml-8 text-3xl">
+          <h1 className="font-semibold xl:text-center lg:text-4xl lg:text-left lg:ml-8 text-xl sm:text-3xl">
             Want anything to be <br />
             easy with <span className="font-bold">LaslesVPN.</span>
           </h1>
-          <p className="mt-10 lg:text-left lg:ml-8">
+          <p className="mt-10 xl:text-center lg:text-left lg:ml-8 text-sm sm:text-lg">
             Provide a network for all your needs with ease and fun using
             <span className="font-semibold "> LaslesVPN</span> <br />
             discover interesting features from us.

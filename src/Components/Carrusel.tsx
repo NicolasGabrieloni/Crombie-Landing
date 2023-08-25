@@ -46,7 +46,7 @@ const Carrusel = () => {
 
   return (
     <>
-      <div className="text-center my-40 ">
+      <section id="Testimonials" className="text-center my-40 ">
         <h2 className="font-bold lg:text-3xl text-xl">
           Trusted By Thousands of <br /> Happy Customer
         </h2>
@@ -58,7 +58,7 @@ const Carrusel = () => {
         <Carousel>
           {testimonials.map((testimonial) => (
             <div key={testimonial.fullName} style={contentStyle}>
-              <div className="border border-white rounded-xl lg:w-96 lg:h-60 w-80 p-5 inline-block text-white mt-28 mb-24">
+              <div className="border border-white rounded-xl lg:w-96 lg:h-68 w-80 p-5 inline-block text-white mt-28 mb-24">
                 <div className="flex justify-between mt-2">
                   <div className="flex">
                     <img
@@ -81,7 +81,7 @@ const Carrusel = () => {
             </div>
           ))}
         </Carousel>
-      </div>
+      </section>
     </>
   );
 };

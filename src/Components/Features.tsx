@@ -5,7 +5,7 @@ import img2 from "../img/img2.png";
 function Features() {
   return (
     <>
-      <section className="section w-10/12 h-auto mx-auto md:my-20 my-36">
+      <section id="Features" className="section w-10/12 h-auto mx-auto md:my-20 my-36">
         <div className="flex justify-evenly">
           <div className="flex cursor-pointer hover:scale-110 transition duration-300 mx-2">
             <span
@@ -65,43 +65,41 @@ function Features() {
             />
           </div>
           <div className="lg:w-1/2 sm:w-80 sm:mx-auto">
-            <h2 className="font-semibold text-3xl lg:text-left text-center lg:ml-12 mt-10">
+            <h2 className="font-semibold xl:text-4xl text-2xl sm:text-3xl lg:text-left text-center lg:ml-12 mt-10">
               We provide many <br /> features you can use
             </h2>
-            <p className="mt-10 lg:text-left text-center lg:ml-12">
+            <p className="mt-10 xl:text-xl lg:text-left text-center lg:ml-12">
               You can explore the features what we provide with fun and
               <br /> have their own functions each feature.
             </p>
-            <ul className="mt-6 ml-10">
-              <li className="mt-2 lg:ml-16 sm:ml-5 flex">
+            <ul className="xl:ml-0 lg:ml-0 mt-6 ml-10 xl:text-lg">
+              <li className="mt-2 lg:ml-12 sm:ml-5 flex">
                 <span className="text-2xl">
                   <FcApproval />
                 </span>
-                <p className="lg:ml-10 sm:ml-5 ml-2">
+                <p className="lg:ml-6 sm:ml-5 ml-2">
                   Powerfull online protection.
                 </p>
               </li>
-              <li className="mt-2 lg:ml-16 sm:ml-5 flex">
+              <li className="mt-2 lg:ml-12 sm:ml-5 flex">
                 <span className="text-2xl">
                   <FcApproval />
                 </span>
-                <p className="lg:ml-10 sm:ml-5 ml-2">
+                <p className="lg:ml-6 sm:ml-5 ml-2">
                   Internet without borders.
                 </p>
               </li>
-              <li className="mt-2 lg:ml-16 sm:ml-5 flex">
+              <li className="mt-2 lg:ml-12 sm:ml-5 flex">
                 <span className="text-2xl">
                   <FcApproval />
                 </span>
-                <p className="lg:ml-10 sm:ml-5 ml-2">Supercharged VPN.</p>
+                <p className="lg:ml-6 sm:ml-5 ml-2">Supercharged VPN.</p>
               </li>
-              <li className="mt-2 lg:ml-16 sm:ml-5 flex">
+              <li className="mt-2 lg:ml-12 sm:ml-5 flex">
                 <span className="text-2xl">
                   <FcApproval />
                 </span>
-                <p className="lg:ml-10 sm:ml-5 ml-2">
-                  No specific time limits.
-                </p>
+                <p className="lg:ml-6 sm:ml-5 ml-2">No specific time limits.</p>
               </li>
             </ul>
           </div>

@@ -4,10 +4,10 @@ import { FiFacebook, FiTwitter, FiInstagram } from "react-icons/fi";
 function Footer() {
   return (
     <>
-      <div className="h-72 p-4 flex">
+      <footer className="h-72 p-4 flex">
         <div className="w-1/4">
           <img src={icon} alt="icono" className="w-32 lg:ml-8" />
-          <p className="mt-4 lg:ml-8 lg:text-base text-xs">
+          <p className="mt-4 lg:ml-8 md:text-base text-xs">
             <b>LaslesVPN</b> is a private virtual network that has unique
             features and has high security.
           </p>
@@ -28,7 +28,7 @@ function Footer() {
         </div>
 
         <div className="w-1/4">
-          <div className="text-left pl-8 lg:pl-24 lg:text-base text-xs">
+          <div className="text-left pl-8 lg:pl-24 md:text-base text-xs">
             <h3>
               <b>Product</b>
             </h3>
@@ -44,7 +44,7 @@ function Footer() {
         </div>
 
         <div className="w-1/4">
-          <div className="text-left pl-8 lg:pl-24 lg:text-base text-xs">
+          <div className="text-left pl-8 lg:pl-24 md:text-base text-xs">
             <h3>
               <b>Engage</b>
             </h3>
@@ -64,7 +64,7 @@ function Footer() {
         </div>
 
         <div className="w-1/4">
-          <div className="text-left pl-8 lg:pl-24 lg:text-base text-xs">
+          <div className="text-left pl-8 lg:pl-24 md:text-base text-xs">
             <h3>
               <b>Earn Money</b>
             </h3>
@@ -76,7 +76,7 @@ function Footer() {
             </ul>
           </div>
         </div>
-      </div>
+      </footer>
     </>
   );
 }

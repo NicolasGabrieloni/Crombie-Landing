@@ -63,39 +63,42 @@ function Pricing() {
 
   return (
     <>
-      <section className="mb-24 w-10/12 mt-24 mx-auto text-center h-128">
+      <section
+        id="Pricing"
+        className="mb-24 w-10/12 lg:mt-52 mt-24 md:mb-0 mx-auto text-center h-128"
+      >
         <div>
-          <h2 className="font-bold text-2xl">Choose Your Plan</h2>
-          <p className="mt-6">
+          <h2 className="font-bold xl:text-4xl text-2xl">Choose Your Plan</h2>
+          <p className="mt-6 xl:text-xl">
             Let's choose the package that is best for you and explore it happily
             and cheerfully.
           </p>
         </div>
-        <div className="md:flex justify-around mt-16">
+        <div className="flex flex-col sm:flex sm:flex-row md:flex justify-around mt-16">
           {subcriptions.map((subcription, index) => (
             <div
               key={index}
-              className="mt-4 md:flex-col md:h-110 sm:flex h-60 w-full lg:h-124 lg:w-72 mx-2
+              className="flex justify-evenly sm:justify-normal mt-4 md:flex-col md:h-110 h-60 w-full lg:h-124 lg:w-72 mx-2
                border-grey border border-red-400 hover:border-red-600 rounded-3xl"
             >
-              <div className="md:ml-0 sm:ml-4">
+              <div className="md:ml-0 w-1/2 sm:w-full">
                 {subcription.title === "Free Plan" ? (
                   <img
                     src={iconFree}
                     alt="free"
-                    className="w-24 sm:w-28 mt-10 mx-auto"
+                    className="w-24 lg:w-36 sm:w-28 mt-10 mx-auto"
                   />
                 ) : subcription.title === "Standard Plan" ? (
                   <img
                     src={iconStan}
                     alt="Standard"
-                    className="w-24 sm:w-28 mt-10 mx-auto"
+                    className="w-24 lg:w-36 sm:w-28 mt-10 mx-auto"
                   />
                 ) : (
                   <img
                     src={iconPrem}
                     alt="Premium"
-                    className="w-24 sm:w-28 mt-10 mx-auto"
+                    className="w-24 lg:w-36 sm:w-28 mt-10 mx-auto"
                   />
                 )}
                 <h2 className="font-bold lg:text-lg text-sm mt-8">
@@ -103,14 +106,14 @@ function Pricing() {
                 </h2>
               </div>
 
-              <div>
+              <div className="w-1/2 sm:w-full">
                 <ul className="lg:mt-6 mx-auto px-2 mt-6 lg:px-8 md:h-48 md:mt-10 h-36 lg:h-80 sm:h-72">
                   {subcription.benefits.map((benefit, index) => (
-                    <li key={index} className="mt-2 flex">
-                      <span className="text-xs lg:text-2xl sm:text-lg sm:mt-0 mt-1 md:ml-2">
+                    <li key={index} className="mt-2 lg:mt-5 flex">
+                      <span className="text-xs lg:text-3xl sm:text-lg sm:mt-0 mt-1 md:ml-2">
                         <FcApproval />
                       </span>
-                      <p className="sm:ml-2 lg:mt-5 text-xs sm:mt-0 sm:text-sm">
+                      <p className="ml-2 lg:text-base text-xs sm:mt-0 sm:text-sm">
                         {benefit}
                       </p>
                     </li>
@@ -126,8 +129,8 @@ function Pricing() {
                   </span>
                 </h3>
                 <button
-                  className="lg:w-40 lg:font-bold md:w-36 md:h-10 md:mb-0 sm:mb-2 w-28 h-6 mt-2  border
-                   rounded-3xl border-red-400 text-red-400 hover:bg-red-600 
+                  className="lg:w-40 lg:mt-8 lg:font-bold md:w-36 md:h-10 md:mb-0 sm:mb-2 w-28 h-6 mt-2 
+                  border rounded-3xl border-red-400 text-red-400 hover:bg-red-600 
                    hover:border-red-600 hover:text-white"
                 >
                   Select

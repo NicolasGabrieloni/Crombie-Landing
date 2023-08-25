@@ -8,6 +8,8 @@ import Carrusel from "./Components/Carrusel";
 import Suscribe from "./Components/Suscribe";
 import Form from "./Components/Form";
 import Footer from "./Components/Footer";
+import ScrollTop from "./Components/ScrollTop";
+
 
 export const BASE_URL =
   "https://6xrb5goi1l.execute-api.us-east-1.amazonaws.com";
@@ -16,6 +18,7 @@ function App() {
   return (
     <>
       <Navbar />
+      <ScrollTop />
       <About />
       <Features />
       <Pricing />
