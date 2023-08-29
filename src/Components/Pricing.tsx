@@ -11,7 +11,7 @@ type Suscription = {
   benefits: string[];
 };
 
-function Pricing() {
+function Pricing(): JSX.Element {
   const [subcriptions, setSubcriptions] = useState<Suscription[]>([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string>();

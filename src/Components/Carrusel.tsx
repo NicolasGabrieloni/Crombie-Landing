@@ -16,7 +16,7 @@ const contentStyle: React.CSSProperties = {
   background: "black",
 };
 
-const Carrusel = () => {
+const Carrusel = (): JSX.Element => {
   const [testimonials, setTestimonials] = useState<Testimonials[]>([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string>();

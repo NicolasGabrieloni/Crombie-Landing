@@ -1,6 +1,6 @@
 import icon from "../img/icon.png";
 
-function Navbar() {
+function Navbar(): JSX.Element {
   return (
     <>
       <header className="flex justify-between h-20 pt-3 text-center">

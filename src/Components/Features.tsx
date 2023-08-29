@@ -2,10 +2,13 @@ import { FcApproval } from "react-icons/fc";
 import { FaUserAlt, FaLocationArrow, FaServer } from "react-icons/fa";
 import img2 from "../img/img2.png";
 
-function Features() {
+function Features(): JSX.Element {
   return (
     <>
-      <section id="Features" className="section w-10/12 h-auto mx-auto md:my-20 my-36">
+      <section
+        id="Features"
+        className="section w-10/12 h-auto mx-auto md:my-20 my-36"
+      >
         <div className="flex justify-evenly">
           <div className="flex cursor-pointer hover:scale-110 transition duration-300 mx-2">
             <span

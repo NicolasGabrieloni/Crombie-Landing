@@ -21,7 +21,7 @@ const schema = yup
   })
   .required();
 
-function Form() {
+function Form(): JSX.Element {
   const {
     register,
     handleSubmit,
@@ -53,7 +53,10 @@ function Form() {
 
   return (
     <>
-      <section id="Help" className="lg:w-5/12 w-8/12 text-center mx-auto  mb-32">
+      <section
+        id="Help"
+        className="lg:w-5/12 w-8/12 text-center mx-auto  mb-32"
+      >
         <h2 className="lg:text-4xl md:text-2xl text-xl font-bold">
           Send us your questions or comments!
         </h2>

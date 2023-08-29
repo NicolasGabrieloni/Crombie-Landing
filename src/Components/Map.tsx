@@ -1,7 +1,7 @@
 import mapa from "../img/map.png";
 import marcas from "../img/marcas.png";
 
-function Map() {
+function Map(): JSX.Element {
   return (
     <section className="text-center">
       <h2 className="mt-52 md:mt-28 xl:text-4xl lg:text-3xl text-xl font-bold">

@@ -1,7 +1,7 @@
 import icon from "../img/icon.png";
 import { FiFacebook, FiTwitter, FiInstagram } from "react-icons/fi";
 
-function Footer() {
+function Footer(): JSX.Element {
   return (
     <>
       <footer className="h-72 p-4 flex">

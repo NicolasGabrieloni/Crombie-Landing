@@ -1,4 +1,4 @@
-function Suscribe() {
+function Suscribe(): JSX.Element {
   return (
     <>
       <section className="text-center lg:flex-row lg:my-40 my-20 h-60 md:flex-col sm:flex">

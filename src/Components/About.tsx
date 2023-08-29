@@ -1,9 +1,12 @@
 import img1 from "../img/img1.png";
 
-function About() {
+function About(): JSX.Element {
   return (
     <>
-      <section id="About" className="section w-10/12 h-110 mt-40 mx-auto lg:flex lg:mb-10 md:mb-44">
+      <section
+        id="About"
+        className="section w-10/12 h-110 mt-40 mx-auto lg:flex lg:mb-10 md:mb-44"
+      >
         <div className="lg:w-1/2 text-center">
           <h1 className="font-semibold xl:text-center lg:text-4xl lg:text-left lg:ml-8 text-xl sm:text-3xl">
             Want anything to be <br />
